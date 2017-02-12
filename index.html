@@ -1,0 +1,22 @@
+<!DOCTYPE html/>
+<html>
+  <head>
+
+    <title>booty</title>
+
+    <link rel="stylesheet" href="/styles.css">  <!-- this links our preexisting stylesheet -->
+  </head>
+	<body>
+		<h1 href"styles.css">Send me a text!</h1>
+      <h2>(910) 218-9773</h2>
+	<script src="/socket.io/socket.io.js"></script>
+	<script>
+	var socke = io.connect('http://localhost:3000');
+	socket.on('message', function(data) {
+		var message = documentgetElementById("message");
+		var p = document.createElement("p");
+		p.innerText = data;
+		message.appendChild(p);
+	</body>
+
+</html>
